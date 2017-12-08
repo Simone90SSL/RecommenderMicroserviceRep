@@ -1,0 +1,23 @@
+<!doctype html>
+<title>Recommender</title>
+<div>
+Recommender status: {{status}}
+</div>
+{% if status == "READY" %}
+<div>
+    <ul>
+        <li>
+            <a href="/recommender/user">Recommend to user</a>
+        </li>
+        <li>
+            <a href="/recommender/item">Recommend to item</a>
+        </li>
+        <li>
+            <a href="/recommender/push">Push all the recommendation to the Social Network Microservice</a>
+        </li>
+    </ul>
+</div>
+{% endif %}
+<div>
+    <a href="/">Back to Index</a>
+</div>
